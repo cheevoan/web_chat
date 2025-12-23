@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::view('dashboard', 'dashboard')
+Route::redirect('dashboard', 'chat')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
