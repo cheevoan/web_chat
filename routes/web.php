@@ -6,7 +6,7 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('dashboard');
 })->name('home');
 
 Route::redirect('dashboard', 'chat')
